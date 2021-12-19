@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> периметр прямоугольника</title>
+
+</head>
+<body>
+<h3>Вычисление периметра прямоугольника</h3>
+<input type="text" name="" placeholder="Введите первую сторону " id="side1" >
+<input type="text" name="" placeholder="Введите вторую сторону " id="side2" >
+<button id="go">Вычислить</button>
+
+
+
+<p>Периметр квадрата: </p>
+<input type="text" name="" id="Perimetr"><br><br>
+</body>
+<script type="text/javascript">
+//Сделайте калькулятор, который будет находить площадь и периметр прямоугольника.
+let side1 = document.getElementById('side1');
+let side2 = document.getElementById('side2');
+let Area = document.getElementById('Area');
+let Perimetr = document.getElementById('Perimetr');
+let go = document.getElementById('go');
+
+go.addEventListener('click', function() {
+Perimetr.value = side1.value * 2 + side2.value * 2;
+});
+</script>
+</html>
